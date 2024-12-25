@@ -18,11 +18,22 @@ class HomePage extends StatelessWidget {
         builder: (context, value, child) {
           final contacts = value as List<Contact>;
           return ListView.builder(
-            itemCount: contactBook.length,
+            itemCount: contacts.length,
             itemBuilder: (context, index) {
-              final contact = contactBook.contact(atIndex: index);
-              return ListTile(
-                title: Text(contact!.name),
+              final contact = contacts[index];
+              return Dismissible(
+                //Adds swipe-to-dismiss function
+                onDismissed: (direction) {
+                  ContactBook().remove(contact: contact);
+                },
+                key: ValueKey(contact.id),
+                child: Material(
+                  color: Colors.white,
+                  elevation: 10,
+                  child: ListTile(
+                    title: Text(contact.name),
+                  ),
+                ),
               );
             },
           );
