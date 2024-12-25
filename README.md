@@ -1,16 +1,9 @@
-# state_management
+# STATE MANAGEMENT
 
-A new Flutter project.
+This project is aimed to cover all the basics of state management in flutter.
 
-## Getting Started
+State management in Flutter is a core concept used to manage and share the state (data or UI elements) of an application effectively.
 
-This project is a starting point for a Flutter application.
+This project is based on the content within the following playlist:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+(https://youtube.com/playlist?list=PL6yRaaP0WPkUf-ff1OX99DVSL1cynLHxO&feature=shared)
