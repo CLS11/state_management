@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   dev: ^1.0.0
   very_good_analysis: ^7.0.0
+  uuid: ^4.5.1
 
 dev_dependencies:
   flutter_test:
