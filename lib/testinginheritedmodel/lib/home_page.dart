@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testinginheritedmodel/available_colors.dart';
+import 'package:testinginheritedmodel/color_widget.dart';
 import 'package:testinginheritedmodel/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,6 +41,12 @@ class _HomePageState extends State<HomePage> {
                   child: const Text('Change color 2'),
                 ),
               ],
+            ),
+            const ColorWidget(
+              color: AvailableColors.one,
+            ),
+            const ColorWidget(
+              color: AvailableColors.two,
             ),
           ],
         ),
