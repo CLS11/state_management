@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:testingprovider/breadcrumb_provider.dart';
 import 'package:testingprovider/home_page.dart';
+import 'package:testingprovider/new_breadcrumb_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: HomePage(),
         routes: {
-          '/new': (context) => const Material(),
+          '/new': (context) => const NewBreadCrumbWidget(),
         },
       ),
     );
