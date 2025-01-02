@@ -5,8 +5,7 @@ class BreadCrumb {
   BreadCrumb({
     required this.isActive,
     required this.name,
-    required this.uuid,
-  });
+  }) : uuid = const Uuid().v4();
 
   bool isActive;
   final String name;
