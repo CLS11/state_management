@@ -7,7 +7,7 @@ class BaseObject {
       : id = const Uuid().v4(),
         lastUpdated = DateTime.now().toIso8601String();
   final dynamic id;
-  final dynamic lastUpdated;
+  final String lastUpdated;
 
   @override
   bool operator ==(covariant BaseObject other) => id == other.id;
