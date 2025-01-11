@@ -9,9 +9,11 @@ class HomePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     late final StreamController<double> controller;
-    controller = useStreamController<double>(onListen: () {
-      controller.sink.add(0);
-    });
+    controller = useStreamController<double>(
+      onListen: () {
+        controller.sink.add(0);
+      },
+    );
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
