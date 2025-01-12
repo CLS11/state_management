@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:reduxexample/item_filter.dart';
 
 @immutable
-class State {
-  const State({
+class AppState {
+  const AppState({
     required this.items,
     required this.filter,
   });
